@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-color:powderblue;
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.wrap{
+    background-color: #141414;
+    width: 700px;
+    border-radius: 20px;
+    padding: 30px 30px;
+    color:white;
+}
+
+.piano-keys .key{
+    color:white;
+    list-style: none;
+    color: #a2a2a2;
+}
+.piano-keys{
+    display: flex;
+    margin-top: 20px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.piano-keys .white{
+    width:70px;
+    height:230px;
+    background-color: white;
+    border: 1px solid black;
+    
+}
+.piano-keys .black{
+    width:44px;
+    height:140px;
+    background-color: black;
+    z-index: 2;
+    margin: 0 -22px 0 -22px;
+}
+.piano-keys .white:active{
+    box-shadow: inset -5px 5px 20px rgba(0, 0,0,0.5);
+    background: linear-gradient(to bottom,#fff 0%);
+}
